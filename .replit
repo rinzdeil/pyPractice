@@ -1,4 +1,8 @@
-entrypoint = "experiment.py"
+# entrypoint = "main.py"
+entrypoint = "questions.py"
+# entrypoint = "functions.py"
+# entrypoint = "experiment.py"
+
 modules = ["python-3.11"]
 
 [nix]
