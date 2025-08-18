@@ -1,4 +1,4 @@
-FILEPATH = "python_masterclass/todos.txt"
+FILEPATH = "text_folder/todos.txt"
 
 
 def get_todos(filepath=FILEPATH):
@@ -8,5 +8,5 @@ def get_todos(filepath=FILEPATH):
 
 
 def write_todos(todos_arg, filepath=FILEPATH):
-    with open("python_masterclass/todos.txt", "w") as file:
+    with open("text_folder/todos.txt", "w") as file:
         file.writelines(todos_arg)
