@@ -1,5 +1,5 @@
-# entrypoint = "main.py"
-entrypoint = "questions.py"
+entrypoint = "main.py"
+# entrypoint = "questions.py"
 # entrypoint = "functions.py"
 # entrypoint = "experiment.py"
 
