@@ -1,7 +1,8 @@
-entrypoint = "main.py"
+# entrypoint = "main.py"
 # entrypoint = "questions.py"
 # entrypoint = "functions.py"
 # entrypoint = "experiment.py"
+entrypoint = "python_masterclass/create_pdf/create_pdf.py"
 
 modules = ["python-3.11"]
 
@@ -17,3 +18,6 @@ requiredFiles = [".replit", "replit.nix"]
 [deployment]
 run = ["python3", "main.py"]
 deploymentTarget = "cloudrun"
+
+[agent]
+expertMode = true
