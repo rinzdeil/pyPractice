@@ -2,7 +2,8 @@
 # entrypoint = "questions.py"
 # entrypoint = "functions.py"
 # entrypoint = "experiment.py"
-entrypoint = "python_masterclass/create_pdf/create_pdf.py"
+# entrypoint = "python_masterclass/create_pdf/create_pdf.py"
+entrypoint = "python_masterclass/invoice_gen/gen_invoice.py"
 
 modules = ["python-3.11"]
 
