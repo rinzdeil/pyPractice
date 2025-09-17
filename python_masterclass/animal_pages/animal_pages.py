@@ -8,8 +8,6 @@ for file in files:
     with open(file, 'r') as f:
         contents = f.read()
         # print(contents)
-    multiline = f"""{contents}"""
-    print(multiline)
 
     title = file.strip('.txt').title()
     print(file, title)
@@ -20,7 +18,7 @@ for file in files:
     pdf.set_font('Helvetica', 'B', 20)
     pdf.cell(50, 10, txt=title, align='L', ln=1)
     pdf.set_font('Helvetica', '', 14)
-    pdf.multi_cell(0, 10, txt=multiline, align='L')
+    pdf.multi_cell(0, 7, txt=contents, align='L')
 
 print("PDF Created")
 pdf.output('animal_pages.pdf')
