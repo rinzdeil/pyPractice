@@ -24,7 +24,7 @@ content = response.json()
 
 lines = ""
 
-for article in content['results']:
+for article in content['results'][:15]:
     title = article['title']
     description = article['description']
     link = article['link']
