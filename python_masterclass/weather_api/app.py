@@ -4,13 +4,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Check this line for typos
     return render_template('index.html') 
 
-@app.route("/about/")
-def about():
-    return render_template("about.html")
+@app.route('/stations/')
+def index():
+    return render_template('stations.html') 
 
-app.run(debug=True)
-# Common typo: return render_template('Index.html') 
-# when the file is 'index.html'
+@app.route('/words/')
+def index():
+    return render_template('words.html') 
+
+@app.route("/api/v1/<station>/<date>")
+def api(station, date):
+    return render_template("api.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
